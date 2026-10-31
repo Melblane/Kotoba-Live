@@ -2,6 +2,7 @@
   "name": "kotoba-live",
   "version": "1.0.0",
   "private": true,
+  "author": "Atthaphon Sukcharoen",
   "description": "Real-time Japanese to Thai subtitle translator for browser tab audio",
   "workspaces": ["server", "web"],
   "engines": { "node": ">=20.6" },

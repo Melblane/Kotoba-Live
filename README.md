@@ -181,3 +181,8 @@ Not covered by automated tests: the real browser picker and tab audio, Picture-i
 - **Quota or key errors**: the provider's message is logged server-side. The browser only sees a short summary.
 - **Subtitles feel late**: pick *Fastest* latency. Use a faster speech model, or run one locally.
 - **Odd text over music**: the app discards the most common hallucinations and stops requesting partials after repeated empty results, but heavy background music will still lower accuracy.
+
+## Credits
+
+Created by **Atthaphon Sukcharoen** (นายอรรถภณ สุขเจริญ).
+
