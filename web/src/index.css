@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: dark; }
+  html, body, #root { height: 100%; }
+  body {
+    @apply bg-ink-800 font-sans text-fg antialiased;
+    font-feature-settings: 'tnum' 1;
+  }
+  ::selection { background: rgba(143, 123, 255, 0.4); }
+  :focus-visible { outline: 2px solid rgba(143, 123, 255, 0.8); outline-offset: 2px; }
+  * { scrollbar-width: thin; scrollbar-color: #363a48 transparent; }
+}
+
+@keyframes subtitle-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: var(--row-opacity, 1); transform: none; }
+}
+
+@layer components {
+  /* One line of the subtitle stack. Position moves are animated with transform only. */
+  .subtitle-row {
+    opacity: var(--row-opacity, 1);
+    animation: subtitle-in 0.28s ease-out backwards;
+    transition: opacity 0.3s ease;
+  }
+  .subtitle-row[data-leaving='true'] { opacity: 0; }
+
+  .panel { @apply rounded-2xl border bg-ink-700/80 shadow-[0_1px_0_rgba(255,255,255,0.04)_inset]; }
+  .subtitle-shadow {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.95), 0 1px 6px rgba(0, 0, 0, 0.85), 0 0 14px rgba(0, 0, 0, 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
