@@ -1,3 +1,5 @@
+**English** | [ภาษาไทย](README.th.md)
+
 # Kotoba Live
 
 Real-time Japanese to Thai subtitles for whatever is playing in a browser tab. You pick a tab or window, Kotoba Live listens to its audio, transcribes the Japanese, translates it into conversational Thai, and shows the result as subtitles. It works well for anime, dramas, livestreams and everyday video.
