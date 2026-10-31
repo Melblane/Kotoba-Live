@@ -184,5 +184,5 @@ Not covered by automated tests: the real browser picker and tab audio, Picture-i
 
 ## Credits
 
-Created by **Atthaphon Sukcharoen** (นายอรรถภณ สุขเจริญ).
+Created by **Atthaphon Sukcharoen**.
 
